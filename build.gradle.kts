@@ -36,7 +36,12 @@ dependencies {
 	testImplementation("org.springframework.security:spring-security-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
+
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+	implementation("io.jsonwebtoken:jjwt:0.6.0")
+	implementation("javax.xml.bind:jaxb-api:2.3.1")
+
 }
 
 tasks.withType<Test> {
